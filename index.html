@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <a class="navbar-brand" href="#">Brand Name</a>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> -->
+        <button class=" secondary-btn" type="submit">Search</button>
+        <button class="primary-btn" type="submit">Get Started</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
 <body>
-    Test
+    <section class="hero-section">
+        <div class="hero-left">
+            <h1 class="hero-hook">Grow Your Business with <span>Professional Solutions</span></h1>
+            <div class="hero-paragraph">We help small businesses thrive in the digital age with cutting-edge solutions, expert guidance, and unwavering support. Your success is our mission.</div>
+            <div class="hero-buttons">
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn">Watch Demo</button>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-big">
+                        500+
+                    </div>
+                    <div class="stat-small">
+                        Happy Clients
+                    </div>
+                </div>
+                <div>
+                    <div class="stat-big">
+                        99%
+                    </div>
+                    <div class="stat-small">
+                        Success Rate
+                    </div>
+                </div>
+                <div>
+                    <div class="stat-big">
+                        24/7
+                    </div>
+                    <div class="stat-small">
+                        Support
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="hero-image" src="assets/jason-goodman-bzqU01v-G54-unsplash.jpg">
+    </section>
 </body>
+
 </html>
