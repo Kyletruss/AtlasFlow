@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #f4f6f8;
+  --second-bg-color: #fafbfd;
   --header-bg-color: #fcfdfe;
   --primary-color: 60, 131, 246;
 
@@ -73,10 +74,15 @@ nav{
   margin: 12px 0px;
 
 }
-.hero-paragraph{
+.large-paragraph{
   color: var(--paragraph-text);
   font-size: 20px;
   margin: 8px 0px 24px;
+}
+
+.medium-paragraph{
+  color: var(--paragraph-text);
+  font-size: 1.125rem;
 }
 
 .hero-hook span{
@@ -127,6 +133,41 @@ nav{
 }
 
 
+
+
+
+
+.about-section{
+  background-color: var(--second-bg-color);
+  padding: 8% 5%;
+  display: flex;
+  column-gap: 10%;
+}
+
+.about-section h2{
+  font-weight: 700;
+}
+
+.about-section div{
+  width: 40%;
+}
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.about-card{
+  background-color: #ffffff;
+  border: 2px solid #e3e9f0;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.about-card:hover{
+  transform: scale(1.1);
+}
 
 
 
