@@ -2,6 +2,7 @@
   --main-bg-color: #f4f6f8;
   --second-bg-color: #fafbfd;
   --header-bg-color: #fcfdfe;
+  --services-bg-color: #ffffff;
   --primary-color: 60, 131, 246;
 
   --secondary-color: #eed38d;
@@ -210,6 +211,58 @@ nav{
 
 
 
+
+.services-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: var(--services-bg-color);
+}
+
+.services-head{
+  max-width: 48rem;
+
+  text-align: center;
+
+}
+.services-head h2{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.services-head p{
+  color: var(--paragraph-text);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.services-tiles{
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-tile{
+  border: 2px solid #e3e9f0;
+  border-radius: 8px;
+  transition: 0.5s;
+  padding: 24px;
+  width: 30%;
+}
+
+.services-tile:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+
+
 .primary-btn{
   background-color: rgba(var(--primary-color));
   border: none;
@@ -245,4 +298,12 @@ nav{
   padding: 10px;
   color: #344256;
 
+}
+
+.services-button{
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
