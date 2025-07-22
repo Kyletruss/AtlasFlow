@@ -321,6 +321,131 @@ nav{
 }
 
 
+.testimonial-section{
+  background-color: var(--second-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.testimonial-section h2{
+  color: var(--primary-text);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.testimonial-paragraph{
+  color: var(--paragraph-text);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 48rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.testimonial-cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-content: center;
+}
+
+.testimonial-card{
+  border: 2px solid #e3e9f0;
+  border-radius: 8px;
+  transition: 0.5s;
+  padding: 24px;
+  width: 30%;
+}
+
+.testimonial-card:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.testimonial-card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-star{
+  height: 16px;
+}
+
+.testimonial-quote{
+  height: 32px;
+}
+
+.testimonial{
+  font-style: italic;
+  text-align: left;
+  color: var(--paragraph-text);
+  margin: 12px 0px;
+}
+
+
+.testimonial-credit{
+  display: flex;
+  width: 100%;
+  column-gap: 12px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.testimonial-picture{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  
+}
+
+.testimonial-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.testimonial-company{
+  color: var(--paragraph-text);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+
+.testimonial-stats{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonial-stat-large{
+  color: rgba(var(--primary-color));
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.testimonial-stat-small{
+  color: var(--paragraph-text);
+
+}
+
+
+
+
+
 
 
 .primary-btn{
