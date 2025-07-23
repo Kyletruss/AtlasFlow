@@ -443,7 +443,146 @@ nav{
 }
 
 
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--services-bg-color);
+}
 
+.contact-sections{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+.contact-section h2{
+  color: var(--primary-text);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.contact-section-paragraph{
+  color: var(--paragraph-text);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 48rem;
+  text-align: center;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.contact-section-left{
+  width: 46%;
+}
+
+.contact-form{
+  border: 2px solid #e3e9f0;
+  border-radius: 8px;
+  padding: 24px;
+  position: sticky;
+  top: 80px;
+}
+
+.contact-section-right{
+  padding: 0px 24px;
+  width: 46%;
+  color: var(--paragraph-text);
+
+}
+
+.contact-section-right h4{
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.contact-sections h3{
+  color: var(--primary-text);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.contact-section-left div{
+  margin-bottom: 12px;
+  height: auto;
+}
+
+
+
+.input-row-1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-row-1 div{
+  width: 45%
+}
+
+.contact-section-left input, textarea{
+  width: 100%;
+  border: 2px solid #e3e9f0;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+
+.contact-section-left input::placeholder{
+  color: var(--paragraph-text);
+}
+
+#message{
+  height: 20vh;
+}
+
+
+.contact-section-left button{
+  width: 100%;
+}
+
+.contact-card{
+  border: 2px solid #e3e9f0;
+  border-radius: 8px;
+  transition: 0.5s;
+  padding: 24px;
+  display: flex;
+  width: 100%;
+  column-gap: 24px;
+  margin: 24px 0px;
+}
+
+
+.contact-card:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.contact-card p{
+  margin: 0px;
+}
+
+.contact-card img{
+  background-color: rgba(var(--primary-color));
+  width: 40px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 1225px) {
+  .contact-section-right, .contact-section-left{
+    width: 100%;
+  }
+}
 
 
 
