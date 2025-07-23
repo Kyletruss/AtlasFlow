@@ -5,7 +5,7 @@
   --services-bg-color: #ffffff;
   --primary-color: 60, 131, 246;
 
-  --secondary-color: #eed38d;
+  --secondary-color: #eac974;
 
 
   --primary-text: #344256;
@@ -214,7 +214,7 @@ nav{
 }
 
 .about-list{
-  color: #344256;
+  color: var(--primary-text);
   margin-bottom: 12px;
 }
 
@@ -490,6 +490,10 @@ nav{
   top: 80px;
 }
 
+.contact-form button:hover{
+  transform: scale(1.05);
+}
+
 .contact-section-right{
   padding: 0px 24px;
   width: 46%;
@@ -582,6 +586,120 @@ nav{
   .contact-section-right, .contact-section-left{
     width: 100%;
   }
+}
+
+
+
+footer{
+  background-color: var(--primary-text);
+  padding: 32px;
+}
+
+.footer-top{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--paragraph-text);
+  margin-bottom: 24px;
+  padding: 24px 0px;
+}
+
+.footer-top > div{
+  width: 20%;
+}
+
+.footer-top h3{
+  color: #e5f0fa;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.footer-top li{
+  list-style-type: none;
+}
+
+.footer-top a{
+  color: #e5f0fa;
+  text-decoration: none;
+  color: var(--paragraph-text);
+}
+
+.footer-top a:hover{
+  color:var(--secondary-color);
+}
+
+.footer-top ul{
+  padding: 0;
+  margin: 0;
+}
+
+.footer-header{
+  color:var(--secondary-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.footer-left p{
+  color: var(--paragraph-text);
+}
+
+.footer-connected p{
+  color: var(--paragraph-text);
+}
+
+.footer-connected input{
+  background-color: #495567;
+  border: 1px solid #6d7786;
+  border-radius: 8px 0px 0px 8px;
+  padding: 4px 6px;
+  width: 80%;
+  margin-bottom: 24px;
+}
+
+.footer-connected img{
+  height: 90%;
+  width: 90%;
+}
+.footer-connected button{
+  border-radius: 0px 8px 8px 0px;
+  width: 20%;
+  margin-bottom: 24px;
+  padding: 5px;
+}
+
+.footer-connected input::placeholder{
+  color: var(--paragraph-text);
+}
+
+.email-subscribe{
+  display: flex;
+
+}
+
+.socials{
+  display: flex;
+  column-gap: 10px;
+}
+
+.socials a{
+  width: 12%;
+  background-color: #495567;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+.socials img{
+  width: 100%;
+  height: 100%;
+}
+
+.socials a:hover{
+  background-color: var(--secondary-color);
+}
+
+.footer-bottom{
+  color: var(--paragraph-text);
 }
 
 
