@@ -43,10 +43,21 @@ nav{
   margin: 0px;
 }
 
-/* .d-flex{
-  column-gap: 10px;
-  height: 100%;
-} */
+.d-flex{
+  /* column-gap: 10px;
+  height: 100%; */
+}
+
+#nav-btn{
+  visibility: hidden;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+#nav-btn.visible {
+  visibility: visible;
+  opacity: 1;
+}
 
 .navbar-brand{
   font-weight: 700;
@@ -181,7 +192,7 @@ nav{
   width: 40%
 }
 
-.about-left button{
+.about-left{
   margin-bottom: 48px;
 }
 
@@ -718,6 +729,8 @@ footer{
 .socials{
   display: flex;
   column-gap: 10px;
+
+
 }
 
 .socials a{
@@ -725,6 +738,8 @@ footer{
   background-color: #495567;
   transition: 0.5s;
   border-radius: 8px;
+    max-height: 30px;
+  max-width: 30px;
 }
 .socials img{
   width: 100%;
@@ -741,6 +756,9 @@ footer{
 
 
 
+a.primary-btn{
+  text-decoration: none;
+}
 
 .primary-btn{
   background-color: rgba(var(--primary-color));
@@ -778,7 +796,11 @@ footer{
   border-radius: 8px;
   padding: 10px;
   color: #344256;
+  max-height: 50px
+}
 
+a.third-button{
+  text-decoration: none;
 }
 
 .services-button{

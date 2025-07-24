@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
+<nav class="navbar sticky-top navbar-expand-md bg-body-tertiary" id="nav">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,34 +23,34 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about-section">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#services-section">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" href="#testimonial-section">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact-section">Contact</a>
         </li>
       </ul>
       <div class="d-flex">
         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> -->
         <!-- <button class=" secondary-btn" type="submit">Search</button> -->
-        <button class="primary-btn" type="submit">Get Started</button>
+        <a class="primary-btn" id="nav-btn" href="#contact-section" type="submit">Get Started</a>
       </div>
     </div>
   </div>
 </nav>
 
 <body>
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
         <div class="hero-left">
             <h1 class="hero-hook">Grow Your Business with <span>Professional Solutions</span></h1>
             <div class="large-paragraph">We help small businesses thrive in the digital age with cutting-edge solutions, expert guidance, and unwavering support. Your success is our mission.</div>
             <div class="hero-buttons">
-                <button class="primary-btn">Get Started</button>
+                <a class="primary-btn" href="#contact-section" type="submit">Get Started</a>
                 <button class="secondary-btn">Watch Demo</button>
             </div>
             <div class="hero-stats">
@@ -82,31 +82,31 @@
         </div>
         <img class="hero-image" src="assets/jason-goodman-bzqU01v-G54-unsplash.jpg">
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about-section">
       <div class="about-left">
         <h2>About Our Company</h2>
         <p class="medium-paragraph">Founded with a passion for helping businesses succeed, we've grown into a trusted partner for companies looking to transform their operations and achieve sustainable growth.</p>
 
         <div class="about-list">
           <div>
-            <img src="assets/326568_check_circle_icon.png" class="check">
+            <img src="assets/check-circle-svgrepo-com.svg" class="check">
             <span>10+ years of industry experience</span>
           </div>
           <div>
-            <img src="assets/326568_check_circle_icon.png" class="check">
+            <img src="assets/check-circle-svgrepo-com.svg" class="check">
             <span>Certified professionals and experts</span>
           </div>
           <div>
-            <img src="assets/326568_check_circle_icon.png" class="check">
+            <img src="assets/check-circle-svgrepo-com.svg" class="check">
             <span>Award-winning customer service</span>
           </div>
           <div>
-            <img src="assets/326568_check_circle_icon.png" class="check">
+            <img src="assets/check-circle-svgrepo-com.svg" class="check">
             <span>Proven track record of success</span>
           </div>
 
         </div>
-        <button class="third-button">Learn More</button>
+        <a class="third-button" href="#services-section">Learn More</a>
       </div>
       <div class="about-right">
         <div class="about-card">
@@ -142,7 +142,7 @@
         
       </div>
     </section>
-    <section class="services-section">
+    <section class="services-section" id="services-section">
       <div class="services-head">
 
           <h2>Our Services</h2>
@@ -315,7 +315,7 @@
       </div>
     </section>
 
-    <section class="testimonial-section">
+    <section class="testimonial-section" id="testimonial-section">
         <h2>Testimonials</h2>
         <p class="testimonial-paragraph">Don't just take our word for it. Here's what our satisfied clients have to say about working with us and the results we've achieved together.</p>
         <div class="testimonial-cards">
@@ -475,7 +475,7 @@
           </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <h2>Contact Us</h2>
       <p class="contact-section-paragraph">Ready to start your project? Have questions about our services? We'd love to hear from you. Let's discuss how we can help your business grow.</p>
       <div class="contact-sections">
@@ -636,6 +636,21 @@
       </div>
 
     </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        const hero = document.getElementById("hero-section");
+        const navButton = document.getElementById("nav-btn");
+        
+        const heroBottom = hero.offsetTop + hero.offsetHeight;
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        if (scrollY >= heroBottom) {
+          navButton.classList.add("visible");
+        } else {
+          navButton.classList.remove("visible");
+        }
+      });
+    </script>
 </body>
 
 </html>
